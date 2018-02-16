@@ -48,25 +48,37 @@
     </div>
 
 
-    <div class="row">
-
- <nav class="navbar navbar-expand-lg navbar-dark bg col-md-12">
+ <div class="row">
+<div class = "col-md-3"></div>
+ <nav class="navbar navbar-expand-lg navbar-dark bg col-md-6">
      
        <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
           
               <li class="nav-item active">
-                <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">Livros<span class="sr-only">(current)</span></a>
               </li>
           
               <li class="nav-item active">
-                <a class="nav-link" href="#">Produtos</a>
+                <a class="nav-link" href="#">Celulares</a>
               </li>
           
               <li class="nav-item active">
-                <a class="nav-link" href="#">Outros </a>
+                <a class="nav-link" href="#">Games</a>
               </li>
-          
+              
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Informática</a>
+              </li>
+             <li class="nav-item active">
+                <a class="nav-link" href="#">Vestuário</a>
+              </li>
+            
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Eletrônicos</a>
+              </li>
+
+
             </ul>
           </div>
       
@@ -74,6 +86,7 @@
    </nav>
 
     </div>
+
   </div>
 </div>
 
