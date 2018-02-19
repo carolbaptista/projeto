@@ -50,50 +50,45 @@ include "conexao.php";
     </div>
     </div>
 
-
- <div class="row">
+<div class="row">
 <div class = "col-md-3"></div>
- <nav class="navbar navbar-expand-lg navbar-dark bg col-md-6">
-     
-       <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-          
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Livros<span class="sr-only">(current)</span></a>
-              </li>
-          
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Celulares</a>
-              </li>
-          
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Games</a>
-              </li>
-              
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Informática</a>
-              </li>
-             <li class="nav-item active">
-                <a class="nav-link" href="#">Vestuário</a>
-              </li>
-            
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Eletrônicos</a>
-              </li>
 
+<nav class="navbar navbar-expand-lg navbar-danger bg-danger">
 
-            </ul>
-          </div>
+  <a class="navbar-brand" href="#" style="color:#fff;">Produtos</a>
+  
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"  style="background-color:#000;"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
       
+      <li class="nav-item active">
+        <a class="nav-link" href="#" style="color:#fff;">Livros</a>
+      </li>
       
-   </nav>
-
+      <li class="nav-item active">
+        <a class="nav-link" href="#" style="color:#fff;">Celulares</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#" style="color:#fff;">Games</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#" style="color:#fff;">Informática</a>
+      </li>
+     <li class="nav-item active">
+        <a class="nav-link" href="#" style="color:#fff;">Vestuário</a>
+      </li>
+    
+      <li class="nav-item active">
+        <a class="nav-link" href="#" style="color:#fff;">Eletrônicos</a>
+      </li>
+    </ul>
+    
     </div>
+</nav>
 
-  </div>
 </div>
-
-
+</div>
 </header>
-
- 
