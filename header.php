@@ -58,31 +58,33 @@ include "conexao.php";
   <a class="navbar-brand" href="#" style="color:#fff;">Produtos</a>
   
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  
     <span class="navbar-toggler-icon"  style="background-color:#ffd;"></span>
+  
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav">
       
       <li class="nav-item active">
-        <a class="nav-link" href="#" style="color:#fff;">Livros</a>
+        <a class="nav-link" href="livro.php" style="color:#fff;">Livros</a>
       </li>
       
       <li class="nav-item active">
-        <a class="nav-link" href="#" style="color:#fff;">Celulares</a>
+        <a class="nav-link" href="celular.php" style="color:#fff;">Celulares</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="#" style="color:#fff;">Games</a>
+        <a class="nav-link" href="game.php" style="color:#fff;">Games</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="#" style="color:#fff;">Informática</a>
+        <a class="nav-link" href="info.php" style="color:#fff;">Informática</a>
       </li>
      <li class="nav-item active">
-        <a class="nav-link" href="#" style="color:#fff;">Vestuário</a>
+        <a class="nav-link" href="vest.php" style="color:#fff;">Vestuário</a>
       </li>
     
       <li class="nav-item active">
-        <a class="nav-link" href="#" style="color:#fff;">Eletrônicos</a>
+        <a class="nav-link" href="eletro.php" style="color:#fff;">Eletrônicos</a>
       </li>
     </ul>
     
