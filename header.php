@@ -30,15 +30,10 @@ include "conexao.php";
       <div class ="col-md-6">
        <form>
       
-      
        <input class="form-control" style="margin-top:5%; float: left; width: 80%;" type="search" placeholder="Buscar" aria-label="Search">
-      
-        
 
        <button type="button" class="btn btn-outline-danger btn-sm" style="margin-top: 6%; margin-left: 1%;" >Pesquisar</button>
         
-    
- 
       </form>
    
    </div>
@@ -51,7 +46,11 @@ include "conexao.php";
     </div>
 
 <div class="row" style="background-color:#dc3545;">
-<div class = "col-md-3" style="background-color:#dc3545;"></div>
+<div class = "col-md-3" style="background-color:#dc3545;">
+
+  <img src="i1.png" class="rounded float-left" alt="..." href="index.php" style="margin-top: 5%;">
+
+</div>
 
 <nav class="navbar navbar-expand-lg navbar-danger bg-danger">
 
