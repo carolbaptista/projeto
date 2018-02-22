@@ -30,10 +30,15 @@ include "conexao.php";
       <div class ="col-md-6">
        <form>
       
+      
        <input class="form-control" style="margin-top:5%; float: left; width: 80%;" type="search" placeholder="Buscar" aria-label="Search">
+      
+        
 
        <button type="button" class="btn btn-outline-danger btn-sm" style="margin-top: 6%; margin-left: 1%;" >Pesquisar</button>
         
+    
+ 
       </form>
    
    </div>
@@ -46,44 +51,38 @@ include "conexao.php";
     </div>
 
 <div class="row" style="background-color:#dc3545;">
-<div class = "col-md-3" style="background-color:#dc3545;">
-
-  <img src="i1.png" class="rounded float-left" alt="..." href="index.php" style="margin-top: 5%;">
-
-</div>
+<div class = "col-md-3" style="background-color:#dc3545;"></div>
 
 <nav class="navbar navbar-expand-lg navbar-danger bg-danger">
 
   <a class="navbar-brand" href="#" style="color:#fff;">Produtos</a>
   
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-  
     <span class="navbar-toggler-icon"  style="background-color:#ffd;"></span>
-  
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav">
       
       <li class="nav-item active">
-        <a class="nav-link" href="categoria.php" style="color:#fff;">Livros</a>
+        <a class="nav-link" href="categoria.php?tipo=livros" style="color:#fff;">Livros</a>
       </li>
       
       <li class="nav-item active">
-        <a class="nav-link" href="categoria.php" style="color:#fff;">Celulares</a>
+        <a class="nav-link" href="categoria.php?tipo=Celular" style="color:#fff;">Celulares</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="categoria.php" style="color:#fff;">Games</a>
+        <a class="nav-link" href="categoria.php?tipo=Games" style="color:#fff;">Games</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="categoria.php" style="color:#fff;">Informática</a>
+        <a class="nav-link" href="categoria.php?tipo=Informatica" style="color:#fff;">Informática</a>
       </li>
      <li class="nav-item active">
-        <a class="nav-link" href="categoria.php" style="color:#fff;">Vestuário</a>
+        <a class="nav-link" href="categoria.php?tipo=Roupa" style="color:#fff;">Vestuário</a>
       </li>
     
       <li class="nav-item active">
-        <a class="nav-link" href="categoria.php" style="color:#fff;">Eletrônicos</a>
+        <a class="nav-link" href="categoria.php?tipo=Eletrônico" style="color:#fff;">Eletrônicos</a>
       </li>
     </ul>
     

@@ -36,12 +36,12 @@
 <p>&nbsp;</p>
 
 <div class = "container">
-<div class = "row">
+<div class = "row text-center">
 
 <?php
 
 include "conexao.php";
-$sql = "SELECT * FROM produtos";
+$sql = "SELECT * FROM produtos limit 3" ;
 $result = $conn->query($sql);
 
 if($result->num_rows > 0){
@@ -51,21 +51,22 @@ if($result->num_rows > 0){
 echo' 
 
 
-<div class = "card">
+<div class = "col-md-4 card border-danger mb-4" style="max-width: ; margin-left: ">
         
           <div class = "card-header bg-danger text-white">
-            <h4>'.$row['nomep'].'</h4>
+            <h4 class="text-center">'.$row['nomep'].'</h4>
           </div>
           
           <div class = "card-body">
             <center><img src="'.$row['foto'].'"/></center>
-            <h5 class="card-title">Brusinha</h5>
-          <p class="card-text">Brusinha</p>
+            <h5 class="text-center" class="card-title">'.$row['descricao'].'</h5>
+          <p class="text-center" class="card-text">R$ '.$row['preco'].',00</p>
           </div>
           <div class = "card-footer">
             <button class = "btn btn-outline-danger">Saiba mais</button>
           </div>
       </div>  
+
 
 
 
@@ -76,7 +77,7 @@ echo'
 }
 
 else{
-  echo "Refaz isso ai";
+  echo "Grande quantidade de usuários na página, volte mais tarde";
 }
 
 $conn->close();
