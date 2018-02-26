@@ -54,7 +54,7 @@ include "conexao.php";
 
 <nav class="navbar navbar-expand-lg navbar-danger bg-danger">
 
-  <a class="navbar-brand" href="#" style="color:#fff;">Produtos</a>
+  <a class="navbar-brand" href="index.php" style="color:#fff;">Produtos</a>
   
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
   
@@ -66,24 +66,24 @@ include "conexao.php";
     <ul class="navbar-nav">
       
       <li class="nav-item active">
-        <a class="nav-link" href="categoria.php" style="color:#fff;">Livros</a>
+        <a class="nav-link" href="categoria.php?tipo=Livros" style="color:#fff;">Livros</a>
       </li>
       
       <li class="nav-item active">
-        <a class="nav-link" href="categoria.php" style="color:#fff;">Celulares</a>
+        <a class="nav-link" href="categoria.php?tipo=Celulares" style="color:#fff;">Celulares</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="categoria.php" style="color:#fff;">Games</a>
+        <a class="nav-link" href="categoria.php?tipo=Games" style="color:#fff;">Games</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="categoria.php" style="color:#fff;">Informática</a>
+        <a class="nav-link" href="categoria.php?tipo=Informatica" style="color:#fff;">Informática</a>
       </li>
      <li class="nav-item active">
-        <a class="nav-link" href="categoria.php" style="color:#fff;">Vestuário</a>
+        <a class="nav-link" href="categoria.php?tipo=Vestuario" style="color:#fff;">Vestuário</a>
       </li>
     
       <li class="nav-item active">
-        <a class="nav-link" href="categoria.php" style="color:#fff;">Eletrônicos</a>
+        <a class="nav-link" href="categoria.php?tipo=Eletronicos" style="color:#fff;">Eletrônicos</a>
       </li>
     </ul>
     
