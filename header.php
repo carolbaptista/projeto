@@ -32,7 +32,7 @@ include "conexao.php";
       
        <input class="form-control" style="margin-top:5%; float: left; width: 80%;" type="search" placeholder="Buscar" aria-label="Search" name="busca">
 
-       <button type="button" class="btn btn-outline-danger btn-sm" style="margin-top: 6%; margin-left: 1%;" ><a href="busca.php">Pesquisar</a></button>
+       <button type="button" class="btn btn-outline-danger btn-sm" style="margin-top: 6%; margin-left: 1%;" ><a href="busca.php" style="color: #000;">Pesquisar</a></button>
         
       </form>
    
@@ -48,7 +48,7 @@ include "conexao.php";
 <div class="row" style="background-color:#dc3545;">
 <div class = "col-md-3" style="background-color:#dc3545;">
 
-  <img src="i1.png" class="rounded float-left" alt="..." href="index.php" style="margin-top: 5%;">
+  <img src="i1.png" class="rounded float-left" alt="..." href="index.php" style="margin-top: 5%;"><a href = "login.php" style="color:#fff;">Adicione ao carrinho</a>
 
 </div>
 

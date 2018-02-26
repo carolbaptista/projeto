@@ -63,7 +63,7 @@ echo'
           <p class="text-center" class="card-text">R$ '.$row['preco'].',00</p>
           </div>
           <div class = "card-footer">
-            <button class = "btn btn-outline-danger">Saiba mais</button>
+            <button  class = "btn btn-outline-danger">Saiba mais</button>
           </div>
       </div>  
 

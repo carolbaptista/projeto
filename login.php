@@ -23,7 +23,7 @@ include "conexao.php";
 		 	</div>
 		 
 	   <hr/>
-		 <center><button type="submit" class="btn btn-danger">Entrar</button>
+		 <center><button type="submit" class="btn btn-danger"> Entrar</button>
 		 </center>
  
  </form>
