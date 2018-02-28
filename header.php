@@ -48,7 +48,7 @@ include "conexao.php";
 <div class="row" style="background-color:#dc3545;">
 <div class = "col-md-3" style="background-color:#dc3545;">
 
-  <img src="i1.png" class="rounded float-left" alt="..." href="index.php" style="margin-top: 5%;"><a href = "login.php" style="color:#fff;">Adicione ao carrinho</a>
+  <img src="i1.png" class="rounded float-left" alt="..." href="index.php" style="margin-top: 5%;"><a href = "" style="color:#fff;">Adicione ao carrinho</a>
 
 </div>
 
