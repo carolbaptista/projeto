@@ -41,7 +41,7 @@
 <?php
 
 include "conexao.php";
-$sql = "SELECT * FROM produtos limit 3" ;
+$sql = "SELECT * FROM produtos order by id desc limit 3" ;
 $result = $conn->query($sql);
 
 if($result->num_rows > 0){
