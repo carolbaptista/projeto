@@ -25,9 +25,9 @@ include "header.php";
   <thead>
     <tr>
       <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
+      <th scope="col">Produto</th>
+      <th scope="col">Preco</th>
+      
     </tr>
   </thead>
   <tbody>
@@ -35,7 +35,7 @@ include "header.php";
       <th scope="row">1</th>
       <td>'.$_SESSION['cesta'].'</td>
       <td>R$ '.$_SESSION['preco'].',00</td>
-      <td></td>
+      
     </tr>
   
   </tbody>
