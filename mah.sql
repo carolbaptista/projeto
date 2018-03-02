@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 28-Fev-2018 às 23:05
+-- Generation Time: 02-Mar-2018 às 22:56
 -- Versão do servidor: 10.1.29-MariaDB
 -- PHP Version: 7.1.12
 
@@ -37,6 +37,28 @@ CREATE TABLE `cadastroc` (
   `nascimento` date NOT NULL,
   `email` varchar(255) COLLATE utf8_bin NOT NULL,
   `senha` varchar(30) COLLATE utf8_bin NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Extraindo dados da tabela `cadastroc`
+--
+
+INSERT INTO `cadastroc` (`id`, `nome`, `cpf`, `telefone`, `endereco`, `nascimento`, `email`, `senha`) VALUES
+(1, 'Julio', 12345678912, 2504, 'Rua Huston', '1996-03-01', 'julio@gmail.com', '12');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `pedido`
+--
+
+CREATE TABLE `pedido` (
+  `id` int(20) NOT NULL,
+  `nome` varchar(255) COLLATE utf8_bin NOT NULL,
+  `endereco` varchar(255) COLLATE utf8_bin NOT NULL,
+  `nomep` varchar(255) COLLATE utf8_bin NOT NULL,
+  `precop` int(20) NOT NULL,
+  `status` varchar(255) COLLATE utf8_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 -- --------------------------------------------------------
@@ -78,6 +100,12 @@ ALTER TABLE `cadastroc`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `pedido`
+--
+ALTER TABLE `pedido`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `produtos`
 --
 ALTER TABLE `produtos`
@@ -91,7 +119,13 @@ ALTER TABLE `produtos`
 -- AUTO_INCREMENT for table `cadastroc`
 --
 ALTER TABLE `cadastroc`
-  MODIFY `id` int(25) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(25) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `pedido`
+--
+ALTER TABLE `pedido`
+  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `produtos`
