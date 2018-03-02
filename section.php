@@ -69,7 +69,7 @@ echo'
             <input type="hidden" name="preco" value="'.$row['preco'].'">
 
              <button  class = "btn btn-outline-danger">Adicione ao carrinho</button>
-
+             </div>
            </form> 
       </div>  
 
