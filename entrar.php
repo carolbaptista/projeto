@@ -23,7 +23,8 @@ if ($result->num_rows > 0) {
 	$_SESSION['email'] = $email;
 	 
 	echo '
-<div class = "col-md-4 card border-danger mb-4" style="max-width: ; margin-left: ">
+  
+<div class="container" class = "col-md-4 card border-danger mb-4" style="max-width: ; margin-left: ">
         
           <div class = "card-header bg-danger text-white">
             <h4 class="text-center">Nome: '.$row['nome'].'</h4>
@@ -32,7 +33,7 @@ if ($result->num_rows > 0) {
           <div class = "card-body">
             <h5 class="text-center" class="card-title">CPF: '.$row['cpf'].'</h5>
             <h5 class="text-center" class="card-title"> Telefone: '.$row['telefone'].'</h5>
-            <h5 class="text-center" class="card-title">Endereco: '.$row['email'].'</h5>
+            <h5 class="text-center" class="card-title">Endereco: '.$row['endereco'].'</h5>
             <h5 
           <p class="text-center" class="card-text">Nascimento: '.$row['nascimento'].'</p>
           </div></h5>
