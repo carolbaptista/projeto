@@ -3,7 +3,6 @@
 <body>
 
 <?php
-session_start();
 
 include "conexao.php";
 include "header.php";
@@ -19,14 +18,18 @@ include "header.php";
 	 	
 
 	 }
-  
-	echo '
-	<table class="table">
+ 
+	echo ' 
+	<p>&nbsp;</p>
+	<div class="container">
+	<table class="table" >
   <thead>
     <tr>
-      <th scope="col">#</th>
+      <th scope="col"></th>
       <th scope="col">Produto</th>
       <th scope="col">Preco</th>
+      <th scope="col">Comprar</th>
+
       
     </tr>
   </thead>
@@ -35,11 +38,13 @@ include "header.php";
       <th scope="row">1</th>
       <td>'.$_SESSION['cesta'].'</td>
       <td>R$ '.$_SESSION['preco'].',00</td>
+      <td><button type="submit" class = "btn btn-outline-danger">Enviar </button></td>
       
     </tr>
   
   </tbody>
 </table>
+</div>
 	';
 	  
 
