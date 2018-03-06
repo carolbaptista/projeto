@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 02-Mar-2018 às 22:56
+-- Generation Time: 06-Mar-2018 às 01:28
 -- Versão do servidor: 10.1.29-MariaDB
 -- PHP Version: 7.1.12
 
@@ -58,7 +58,8 @@ CREATE TABLE `pedido` (
   `endereco` varchar(255) COLLATE utf8_bin NOT NULL,
   `nomep` varchar(255) COLLATE utf8_bin NOT NULL,
   `precop` int(20) NOT NULL,
-  `status` varchar(255) COLLATE utf8_bin NOT NULL
+  `status` varchar(255) COLLATE utf8_bin NOT NULL,
+  `formaPag` varchar(255) COLLATE utf8_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 -- --------------------------------------------------------
