@@ -1,9 +1,9 @@
 
-
+<body>
 <?php
-
-include "conexao.php";
 Include "header.php";
+include "conexao.php";
+
 
 $email = $_POST['email'];
 $senha = $_POST['senha'];
@@ -21,10 +21,18 @@ if ($result->num_rows > 0) {
 
   $_SESSION['logado'] = 1;
 	$_SESSION['email'] = $email;
-	 
+	
+
 	echo '
-  
-<div class="container" class = "col-md-4 card border-danger mb-4" style="max-width: ; margin-left: ">
+
+
+  <p>&nbsp;</p>
+   <div class="container" class = "col-md-4 card border-danger mb-4" style="max-width: ; margin-left: ">
+   <button class = "btn btn-outline-danger" style="text-align:center; margin-right: 40px; margin-left:50px;">Visualizar pedidos</button>
+   <button class = "btn btn-outline-danger" style="text-align:center; margin-right: 40px;">Status dos pedidos</button>
+   <button class = "btn btn-outline-danger" ><a href="alteraa.php">Alterar alguma informação</a></button>
+  <p>&nbsp;</p>
+
         
           <div class = "card-header bg-danger text-white">
             <h4 class="text-center">Nome: '.$row['nome'].'</h4>
@@ -55,3 +63,4 @@ else{
 
 
 ?>
+</body>
