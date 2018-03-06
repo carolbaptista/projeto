@@ -7,25 +7,7 @@ include "header.php";
 include "conexao.php";
 
 
-	 	
-
-	  
-	  
-
-	 if(isset($_POST['cesta'])){
-	 	$_SESSION['cesta']= $_POST['cesta'];
-	 	$_SESSION['preco']= $_POST['preco'];
-	 	
-		$precop = $_SESSION['precop'];
-		$nome = $_SESSION['nome'];
-		$nomep = $_SESSION['cesta'];
-		$endereco = $_SESSION['endereco'];
-		$status = $_SESSION['status'];
-		$formaPag = $_SESSION['formaPag'];
-
-		$sql = "INSERT INTO pedido (nome, endereco , nomep, precop, status, formaPag) VALUES ('$nome', '$endereco', '$nomep', '$precop', '$status', '$formaPag')";  
-
-	 }
+	 
  
 	echo ' 
 	<p>&nbsp;</p>
@@ -58,7 +40,9 @@ include "conexao.php";
 	  
 echo'
 <div class="container">
-<button  type="submit" class = "btn btn-outline-danger" style="margin-left:61%">10 Vezes s/ juros</button>
+<button  type="submit" class = "btn btn-outline-danger" style="margin-left:61%"><a href="car.php">10 Vezes s/ juros</a>
+</button>
+
 <p></p>
 <button  type="submit" class = "btn btn-outline-danger" style="margin-left:61%">12 Vezes com 10% de juros</button>
 </div>';
