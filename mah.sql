@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 06-Mar-2018 às 01:28
+-- Generation Time: 08-Mar-2018 às 00:23
 -- Versão do servidor: 10.1.29-MariaDB
 -- PHP Version: 7.1.12
 
@@ -58,9 +58,16 @@ CREATE TABLE `pedido` (
   `endereco` varchar(255) COLLATE utf8_bin NOT NULL,
   `nomep` varchar(255) COLLATE utf8_bin NOT NULL,
   `precop` int(20) NOT NULL,
-  `status` varchar(255) COLLATE utf8_bin NOT NULL,
-  `formaPag` varchar(255) COLLATE utf8_bin NOT NULL
+  `status` varchar(255) COLLATE utf8_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Extraindo dados da tabela `pedido`
+--
+
+INSERT INTO `pedido` (`id`, `nome`, `endereco`, `nomep`, `precop`, `status`) VALUES
+(41, 'Karina', 'Rua Topster, Casa 7', 'A Culpa e das Estrelas', 25, 'caminho'),
+(42, '', '', '', 0, '');
 
 -- --------------------------------------------------------
 
@@ -90,6 +97,22 @@ INSERT INTO `produtos` (`id`, `nomep`, `preco`, `descricao`, `tipo`, `foto`) VAL
 (6, 'Mouse', 65, 'Utilizavel', 'Informatica', 'i.jpg'),
 (7, 'Televisao', 759, 'Led', 'Eletronicos', 'tv.jpg');
 
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `vendedor`
+--
+
+CREATE TABLE `vendedor` (
+  `id` int(4) NOT NULL,
+  `nomev` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `senha` varchar(255) NOT NULL,
+  `cpf` bigint(11) NOT NULL,
+  `cargo` varchar(255) NOT NULL,
+  `endereco` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 --
 -- Indexes for dumped tables
 --
@@ -113,6 +136,12 @@ ALTER TABLE `produtos`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `vendedor`
+--
+ALTER TABLE `vendedor`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -120,19 +149,25 @@ ALTER TABLE `produtos`
 -- AUTO_INCREMENT for table `cadastroc`
 --
 ALTER TABLE `cadastroc`
-  MODIFY `id` int(25) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(25) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `pedido`
 --
 ALTER TABLE `pedido`
-  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
 -- AUTO_INCREMENT for table `produtos`
 --
 ALTER TABLE `produtos`
   MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT for table `vendedor`
+--
+ALTER TABLE `vendedor`
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
