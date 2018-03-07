@@ -2,16 +2,15 @@
 Include "header.php";
 Include "conexao.php";
 
-$email = $_POST['email'];
-$telefone = $_POST['telefone'];
-$endereco = $_POST['endereco'];
-$senha = $_POST['senha'];
+$id = $_POST['id'];
+$preco = $_POST['preco'];
 
-$sql = "UPDATE cadastroc SET email=$email WHERE id=$id";
+
+$sql = "UPDATE produtos SET preco=$preco WHERE id=$id";
 
 
 if ($conn->query($sql) === TRUE) {
-	echo "Reajuste atualizado com sucesso";
+	echo '<div class="display-4 text-center">Reajuste atualizado com sucesso</div>';
 
 	
 }
@@ -22,5 +21,5 @@ else{
 $conn->close();
 
 
-
+Include "footer.php";
 ?>

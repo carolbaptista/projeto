@@ -31,7 +31,9 @@ if ($result->num_rows > 0) {
   
    <a href="pedidosf.php" class="btn btn-outline-danger btn-lg active" role="button" aria-pressed="true">Visualizar pedidos</a>
    
-   <a href="alteraa.php" class="btn btn-outline-danger btn-lg active" role="button" aria-pressed="true">Alterar alguma informação</a>
+   <a href="alteraa.php" class="btn btn-outline-danger btn-lg active" role="button" aria-pressed="true">Alterar Preço</a>
+
+   <a href="deletee.php" class="btn btn-outline-danger btn-lg active" role="button" aria-pressed="true">Deletar produto</a>
    
   <p>&nbsp;</p>
 
