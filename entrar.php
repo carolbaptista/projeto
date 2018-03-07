@@ -1,14 +1,14 @@
 
 <body>
+
 <?php
+
 Include "header.php";
-include "conexao.php";
+Include "conexao.php";
 
 
 $email = $_POST['email'];
 $senha = $_POST['senha'];
-
-
 
 
 
@@ -27,10 +27,12 @@ if ($result->num_rows > 0) {
 
 
   <p>&nbsp;</p>
-   <div class="container" class = "col-md-4 card border-danger mb-4" style="max-width: ; margin-left: ">
-   <button class = "btn btn-outline-danger" style="text-align:center; margin-right: 40px; margin-left:50px;">Visualizar pedidos</button>
-   <button class = "btn btn-outline-danger" style="text-align:center; margin-right: 40px;">Status dos pedidos</button>
-   <button class = "btn btn-outline-danger" ><a href="alteraa.php">Alterar alguma informação</a></button>
+   <div class="container text-center" class = "col-md-4 card border-danger mb-4" style="max-width: ; margin-left: ">
+  
+   <a href="pedidosf.php" class="btn btn-outline-danger btn-lg active" role="button" aria-pressed="true">Visualizar pedidos</a>
+   
+   <a href="alteraa.php" class="btn btn-outline-danger btn-lg active" role="button" aria-pressed="true">Alterar alguma informação</a>
+   
   <p>&nbsp;</p>
 
         
@@ -48,7 +50,8 @@ if ($result->num_rows > 0) {
           <div class = "card-footer">
             <h5 class="text-center" class="card-title">Bem vinda(o) '.$row['nome'].'</h5>
           </div>
-      </div>  
+      </div> 
+<p>&nbsp;</p>
 
 ';
 	
@@ -58,9 +61,9 @@ if ($result->num_rows > 0) {
 
 else{
 	header('location: login.php');
-	
+	  
 }
-
+Include "footer.php";
 
 ?>
 </body>

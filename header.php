@@ -55,7 +55,7 @@ if($_SESSION['logado'] == 1){
 <div class="row" style="background-color:#dc3545;">
 <div class = "col-md-3" style="background-color:#dc3545;">
 
-  <img src="i1.png" class="rounded float-left" alt="..." href="index.php" style="margin-top: 5%;"><a href = "carrinho.php" style="color:#fff;">Carrinho</a>
+  <img src="i1.png" class="rounded float-left" alt="..." href="index.php" style="margin-top: 5%;"><a href = "carrinho.php" style="color:#fff; text-decoration:none;">Carrinho</a>
 
 </div>
 

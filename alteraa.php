@@ -36,3 +36,7 @@ include "conexao.php";
   </div>
   
 </form>
+
+<?php
+include "footer.php";
+?>
