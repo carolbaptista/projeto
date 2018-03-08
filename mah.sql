@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 08-Mar-2018 às 00:23
+-- Generation Time: 08-Mar-2018 às 01:07
 -- Versão do servidor: 10.1.29-MariaDB
 -- PHP Version: 7.1.12
 
@@ -95,7 +95,8 @@ INSERT INTO `produtos` (`id`, `nomep`, `preco`, `descricao`, `tipo`, `foto`) VAL
 (4, 'Tablet Samsung Galaxy', 459, 'Tab A T280 8GB 7 Wi-Fi - Android 5.1 Proc. Quad Core Camera 5MP + Frontal', 'Celulares', 's.jpg'),
 (5, 'A Culpa e das Estrelas', 25, 'Drama', 'Livros', 'c.jpg'),
 (6, 'Mouse', 65, 'Utilizavel', 'Informatica', 'i.jpg'),
-(7, 'Televisao', 759, 'Led', 'Eletronicos', 'tv.jpg');
+(7, 'Televisao', 759, 'Led', 'Eletronicos', 'tv.jpg'),
+(8, 'Camisa social', 25, 'Linda demais', 'Vestuario', 'social.jpg');
 
 -- --------------------------------------------------------
 
@@ -161,7 +162,7 @@ ALTER TABLE `pedido`
 -- AUTO_INCREMENT for table `produtos`
 --
 ALTER TABLE `produtos`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `vendedor`
