@@ -20,7 +20,9 @@ if ($result->num_rows > 0) {
     
 
   $_SESSION['logado'] = 1;
-	$_SESSION['email'] = $email;
+  $_SESSION['email'] = $email;
+  $_SESSION['nome'] = $row['nome'];
+	$_SESSION['endereco'] = $row['endereco'];
 	
 
 	echo '

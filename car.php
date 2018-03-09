@@ -1,18 +1,33 @@
 <?php
+include "conexao.php";
+include "header.php";
 
-if(isset($_POST['cesta'])){
-	 	$_SESSION['cesta']= $_POST['cesta'];
-	 	$_SESSION['preco']= $_POST['preco'];
-	 	
-		$precop = $_SESSION['precop'];
+
+//if(!isset($_POST['cesta'])){
+
+
+		$precop = $_SESSION['preco'];
 		$nome = $_SESSION['nome'];
-		$nomep = $_SESSION['cesta'];
+		$cesta = $_SESSION['cesta'];
 		$endereco = $_SESSION['endereco'];
 		$status = $_SESSION['status'];
-		$formaPag = $_SESSION['formaPag'];
+		
+		
+		$pagar = $_POST['pagar'];
+		if($pagar=='12x'){
+			$precop= $precop*1.1;
+		}
+		$sql = "INSERT INTO pedido (nome, endereco , cesta, preco, status, pagar) VALUES ('$nome', '$endereco', '$cesta', '$precop', '$status', '$pagar')";  
 
-		$sql = "INSERT INTO pedido (nome, endereco , nomep, precop, status, formaPag) VALUES ('$nome', '$endereco', '$nomep', '$precop', '$status', '$formaPag')";  
+		if ($conn->query($sql) === TRUE){
+			echo "<div class='display-4 text-center'>Compra feita com sucesso</div>";
+			}
+			else {
+				echo "Error: " . $sql . "<br>" . $conn->error;
+			}
 
-	 }
-
+			$conn->close();
+			
+//}
+			include "footer.php";
  ?>

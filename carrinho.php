@@ -8,27 +8,19 @@ include "conexao.php";
 
 
 
-if(isset($_POST['cesta'])){
-    $_SESSION['cesta']= $_POST['cesta'];
-    $_SESSION['preco']= $_POST['preco'];
-    
-    $precop = $_SESSION['precop'];
-    $nome = $_SESSION['nome'];
-    $nomep = $_SESSION['cesta'];
-    $endereco = $_SESSION['endereco'];
-    $status = $_SESSION['status'];
-    $formaPag = $_SESSION['formaPag'];
-
-    $sql = "INSERT INTO pedido (nome, endereco , nomep, precop, status, formaPag) VALUES ('$nome', '$endereco', '$nomep', '$precop', '$status', '$formaPag')";  
-
-   }
+$_SESSION['cesta']= $_POST['cesta'];
+$_SESSION['preco']= $_POST['preco'];
 
 
+
+?>
+
+<div class="container">
 	 
- 
+ <?php
 	echo ' 
 	<p>&nbsp;</p>
-	<div class="container">
+	<form method="POST" action="car.php">
 	<table class="table" >
   <thead>
     <tr>
@@ -36,33 +28,35 @@ if(isset($_POST['cesta'])){
       "col"></th>
       <th scope="col">Produto</th>
       <th scope="col">Preco</th>
-      <th scope="col">Comprar</th>
+      <th scope="col">Forma de pagamento</th>
+      <th scope="col"></th>
 
       
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th scope="row">1</th>
+      <th scope="row"></th>
       <td>'.$_SESSION['cesta'].'</td>
       <td>R$ '.$_SESSION['preco'].',00</td>
-      <td><button type="submit" class = "btn btn-outline-danger">Pagar à vista </button></td>
+      <td><select name="pagar">
+      <option value="vista">À Vista</option>
+      <option value="10x">10 vezes sem juros</option>
+      <option value="12x">12 vezes com 10% de juros</option>
+
+
+      </select></td>
+      <td> <button type="submit" style="background-color: #dc3545; color: #fff; border-radius:12px;">Efetuar compra </button> </td>
       
     </tr>
   
   </tbody>
 </table>
+</form>
 </div>
 	';
 	  
-echo'
-<div class="container">
-<button  type="submit" class = "btn btn-outline-danger" style="margin-left:61%"><a href="car.php">10 Vezes s/ juros</a>
-</button>
 
-<p></p>
-<button  type="submit" class = "btn btn-outline-danger" style="margin-left:61%">12 Vezes com 10% de juros</button>
-</div>';
 	
 include "footer.php";
 return

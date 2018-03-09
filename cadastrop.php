@@ -12,7 +12,7 @@ include "conexao.php";
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="inputEmail4">Nome</label>
-      <input type="text" class="form-control" id="inputnome4" placeholder="Insira o nome do produto " name="nomep">
+      <input type="text" class="form-control" id="inputnome4" placeholder="Insira o nome do produto " name="cesta">
     </div>
     <div class="form-group col-md-6">
       <label for="inputpreco">Preço</label>
@@ -40,6 +40,7 @@ include "conexao.php";
 
 
  <center><button type="submit" class="btn btn-danger" style="">Enviar</button></center> 
+
 </form>
 </div>
 <br/>
