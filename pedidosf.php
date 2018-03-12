@@ -12,8 +12,8 @@ include "header.php";
 
 <?php
 
-$nomep = $_POST['nomep'];
-$precop = $_POST['precop'];
+$cesta = $_POST['cesta'];
+$preco = $_POST['preco'];
 
 $sql = "SELECT * FROM pedido";
 $result = $conn->query($sql);
@@ -38,8 +38,8 @@ echo '
   <tbody>
     <tr>
       <th scope="row"></th>
-      <td>'.$row['nomep'].'</td>
-      <td>R$ '.$row['precop'].',00</td>
+      <td>'.$row['cesta'].'</td>
+      <td>R$ '.$row['preco'].',00</td>
       <td><a href = "statusc.php" class = "btn btn-outline-danger btn active" role= "button" aria-pressed= "true" >Visualizar</a></td>
     
     </tr>

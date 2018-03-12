@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 12-Mar-2018 às 23:06
+-- Generation Time: 12-Mar-2018 às 23:42
 -- Versão do servidor: 10.1.29-MariaDB
 -- PHP Version: 7.1.12
 
@@ -68,7 +68,8 @@ CREATE TABLE `pedido` (
 
 INSERT INTO `pedido` (`id`, `nome`, `endereco`, `cesta`, `preco`, `status`, `pagar`) VALUES
 (43, 'Julio', 'Rua Huston', 'Televisao', 759, '', 'vista'),
-(44, 'Julio', 'Rua Huston', 'Televisao', 759, '', 'vista');
+(44, 'Julio', 'Rua Huston', 'Televisao', 759, '', 'vista'),
+(45, 'Julio', 'Rua Huston', 'Televisao', 759, '', 'vista');
 
 -- --------------------------------------------------------
 
@@ -116,6 +117,15 @@ CREATE TABLE `vendedor` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
+-- Extraindo dados da tabela `vendedor`
+--
+
+INSERT INTO `vendedor` (`id`, `nomev`, `email`, `senha`, `cpf`, `cargo`, `endereco`) VALUES
+(1, '', 'julin@gmail.com', '123', 33333333333, '', 'Rua top '),
+(2, 'julin', 'julin@gmail.com', '123', 33333333333, '', 'Rua top '),
+(5, 'eu', 'eu@gmail.com', '1234', 22222222222, '', 'Minha rua');
+
+--
 -- Indexes for dumped tables
 --
 
@@ -157,7 +167,7 @@ ALTER TABLE `cadastroc`
 -- AUTO_INCREMENT for table `pedido`
 --
 ALTER TABLE `pedido`
-  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
+  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 
 --
 -- AUTO_INCREMENT for table `produtos`
@@ -169,7 +179,7 @@ ALTER TABLE `produtos`
 -- AUTO_INCREMENT for table `vendedor`
 --
 ALTER TABLE `vendedor`
-  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -48,7 +48,10 @@ if($_SESSION['logado'] == 1){
          <div class = "col-md-3">
           <img src="i.png" class="rounded float-right" alt="..." style="margin-top: 5%;">
     
-    <p style="margin-top: 5%;"><a style="color:#000; text-decoration:none;" href="sair.php"> Sair</a></p>  
+    <p style="margin-top: 5%;"><a style="color:#000; text-decoration:none;" href="sair.php"> Sair</a></p> 
+
+    <p style="margin-top: 5%;"><a style="color:#000; text-decoration:none;" href="entrar.php"> Visualizar perfil</a></p> 
+
     </div>
     </div>
 
