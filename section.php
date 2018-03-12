@@ -63,7 +63,7 @@ echo'
           <p class="text-center" class="card-text">R$ '.$row['preco'].',00</p>
           </div>
           <div class = "card-footer">
-            <button  class = "btn btn-outline-danger">Saiba mais</button> 
+           
              <form method="POST" action="carrinho.php">
              <input type="hidden" name="cesta" value="'.$row['nomep'].'"> 
             <input type="hidden" name="preco" value="'.$row['preco'].'">
