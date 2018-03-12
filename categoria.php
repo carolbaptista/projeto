@@ -38,6 +38,14 @@ echo'
           <div class = "card-footer">
             <p class="text-center" class="card-text">'.$row['tipo'].'</p>
           </div>
+        
+           <form method="POST" action="carrinho.php">
+             <input type="hidden" name="cesta" value="'.$row['nomep'].'"> 
+            <input type="hidden" name="preco" value="'.$row['preco'].'">
+
+             <button  class = "btn btn-outline-danger" style="margin:5px">Adicione ao carrinho</button>
+             
+           </form> 
       </div>  
 
 

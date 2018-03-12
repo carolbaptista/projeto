@@ -46,7 +46,7 @@ $_SESSION['preco']= $_POST['preco'];
 
 
       </select></td>
-      <td> <button type="submit" style="background-color: #dc3545; color: #fff; border-radius:12px;">Efetuar compra </button> </td>
+      <td> <button type="submit" style="background-color: #dc3545; color: #fff; border-radius:12px; padding: 5px;">Efetuar compra </button> </td>
       
     </tr>
   
