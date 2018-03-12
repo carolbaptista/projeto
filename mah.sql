@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 08-Mar-2018 às 01:07
+-- Generation Time: 12-Mar-2018 às 23:06
 -- Versão do servidor: 10.1.29-MariaDB
 -- PHP Version: 7.1.12
 
@@ -56,18 +56,19 @@ CREATE TABLE `pedido` (
   `id` int(20) NOT NULL,
   `nome` varchar(255) COLLATE utf8_bin NOT NULL,
   `endereco` varchar(255) COLLATE utf8_bin NOT NULL,
-  `nomep` varchar(255) COLLATE utf8_bin NOT NULL,
-  `precop` int(20) NOT NULL,
-  `status` varchar(255) COLLATE utf8_bin NOT NULL
+  `cesta` varchar(255) COLLATE utf8_bin NOT NULL,
+  `preco` int(20) NOT NULL,
+  `status` varchar(255) COLLATE utf8_bin NOT NULL,
+  `pagar` varchar(255) COLLATE utf8_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
 -- Extraindo dados da tabela `pedido`
 --
 
-INSERT INTO `pedido` (`id`, `nome`, `endereco`, `nomep`, `precop`, `status`) VALUES
-(41, 'Karina', 'Rua Topster, Casa 7', 'A Culpa e das Estrelas', 25, 'caminho'),
-(42, '', '', '', 0, '');
+INSERT INTO `pedido` (`id`, `nome`, `endereco`, `cesta`, `preco`, `status`, `pagar`) VALUES
+(43, 'Julio', 'Rua Huston', 'Televisao', 759, '', 'vista'),
+(44, 'Julio', 'Rua Huston', 'Televisao', 759, '', 'vista');
 
 -- --------------------------------------------------------
 
@@ -156,7 +157,7 @@ ALTER TABLE `cadastroc`
 -- AUTO_INCREMENT for table `pedido`
 --
 ALTER TABLE `pedido`
-  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 
 --
 -- AUTO_INCREMENT for table `produtos`

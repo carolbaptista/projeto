@@ -4,7 +4,7 @@ include "header.php";
 
 
 //if(!isset($_POST['cesta'])){
-
+if($_SESSION['logado']==1){
 
 		$precop = $_SESSION['preco'];
 		$nome = $_SESSION['nome'];
@@ -21,9 +21,9 @@ include "header.php";
 
 		if ($conn->query($sql) === TRUE){
 			echo "<div class='display-4 text-center'>Compra feita com sucesso</div>";
-			}
+			}}
 			else {
-				echo "Error: " . $sql . "<br>" . $conn->error;
+				header('location: login.php');
 			}
 
 			$conn->close();

@@ -7,12 +7,12 @@ include "header.php";
 include "conexao.php";
 
 
-
+if($_POST['cesta']){
 $_SESSION['cesta']= $_POST['cesta'];
 $_SESSION['preco']= $_POST['preco'];
 
 
-
+}
 ?>
 
 <div class="container">
