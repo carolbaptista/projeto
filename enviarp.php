@@ -9,7 +9,7 @@
 	$foto = $_POST['foto'];
 	
 
-	$sql = "INSERT INTO produtos (cesta, preco , descricao, tipo, foto ) VALUES ('$cesta', '$preco', '$descricao', '$tipo','$foto')";
+	$sql = "INSERT INTO produtos (nomep, preco , descricao, tipo, foto ) VALUES ('$nomep', '$preco', '$descricao', '$tipo','$foto')";
 
 	if ($conn->query($sql) === TRUE){
 	echo "<h2 class='text-center' style='padding-top: 20rem;'>Produto cadastrado com sucesso</h2><hr/>";
